@@ -1,8 +1,8 @@
 ---
 max read length: 250
 nomerge max read length: 250
-average read length: 247.117
-average coverage: 38.3713
+average read length: 247.315
+average coverage: 101.944
 libraries:       
     - type:            single
       single reads:    
@@ -21,6 +21,6 @@ libraries:
         binary converted: true
         single reads mapped: true
         library index:   0
-        number of reads: 22395
-        total nucleotides: 5534177
+        number of reads: 57969
+        total nucleotides: 14336576
 ...

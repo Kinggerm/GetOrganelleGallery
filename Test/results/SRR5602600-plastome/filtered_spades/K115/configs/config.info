@@ -18,7 +18,7 @@ dataset /home/data1/SRR5602600-plastome/filtered_spades/dataset.info
 log_filename    log.properties
 
 output_base /home/data1/SRR5602600-plastome/filtered_spades
-tmp_dir /home/data1/SRR5602600-plastome/filtered_spades/tmp/spades_lpmqnyzf
+tmp_dir /home/data1/SRR5602600-plastome/filtered_spades/tmp/spades_3h6u072v
 
 main_iteration true
 ; iterative mode switcher, activates additional contigs usage

@@ -1,7 +1,7 @@
 ; = HAMMER =
 ; input options: working dir, input files, offset, and possibly kmers
 dataset /home/data1/SRR5602600-plastome/filtered_spades/input_dataset.yaml
-input_working_dir /home/data1/SRR5602600-plastome/filtered_spades/tmp/hammer_gn_g3cqo
+input_working_dir /home/data1/SRR5602600-plastome/filtered_spades/tmp/hammer_8yjhdepb
 input_trim_quality			4
 input_qvoffset				
 output_dir /home/data1/SRR5602600-plastome/filtered_spades/corrected

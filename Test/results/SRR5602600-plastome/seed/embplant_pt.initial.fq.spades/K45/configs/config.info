@@ -18,7 +18,7 @@ dataset /home/data1/SRR5602600-plastome/seed/embplant_pt.initial.fq.spades/datas
 log_filename    log.properties
 
 output_base /home/data1/SRR5602600-plastome/seed/embplant_pt.initial.fq.spades
-tmp_dir /home/data1/SRR5602600-plastome/seed/embplant_pt.initial.fq.spades/tmp/spades_jf45s5eh
+tmp_dir /home/data1/SRR5602600-plastome/seed/embplant_pt.initial.fq.spades/tmp/spades_iy7t5ajh
 
 main_iteration true
 ; iterative mode switcher, activates additional contigs usage

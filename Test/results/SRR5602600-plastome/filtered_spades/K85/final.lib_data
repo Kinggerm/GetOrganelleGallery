@@ -1,8 +1,8 @@
 ---
 max read length: 250
 nomerge max read length: 250
-average read length: 247.773
-average coverage: 32.3239
+average read length: 247.897
+average coverage: 52.2051
 libraries:       
     - type:            paired-end
       orientation:     fr
@@ -26,8 +26,8 @@ libraries:
         binary converted: true
         single reads mapped: false
         library index:   0
-        number of reads: 33156
-        total nucleotides: 8213399
+        number of reads: 109497
+        total nucleotides: 27139229
     - type:            single
       single reads:    
         - /home/data1/SRR5602600-plastome/filtered_spades/corrected/filtered_1_unpaired.00.1_0.cor.fastq.gz
@@ -45,8 +45,8 @@ libraries:
         binary converted: true
         single reads mapped: false
         library index:   1
-        number of reads: 1989
-        total nucleotides: 494563
+        number of reads: 6522
+        total nucleotides: 1621772
     - type:            single
       single reads:    
         - /home/data1/SRR5602600-plastome/filtered_spades/corrected/filtered_2_unpaired.00.2_0.cor.fastq.gz
@@ -64,6 +64,6 @@ libraries:
         binary converted: true
         single reads mapped: false
         library index:   2
-        number of reads: 1146
-        total nucleotides: 283978
+        number of reads: 2333
+        total nucleotides: 578062
 ...
