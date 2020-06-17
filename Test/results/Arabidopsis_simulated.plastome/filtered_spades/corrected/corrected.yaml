@@ -1,0 +1,14 @@
+- "left reads":
+  - "/home/data1/Arabidopsis_simulated.plastome/filtered_spades/corrected/filtered_1_paired.00.0_0.cor.fastq.gz"
+  "orientation": "fr"
+  "right reads":
+  - "/home/data1/Arabidopsis_simulated.plastome/filtered_spades/corrected/filtered_2_paired.00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/home/data1/Arabidopsis_simulated.plastome/filtered_spades/corrected/filtered__unpaired.00.0_0.cor.fastq.gz"
+  "type": "paired-end"
+- "single reads":
+  - "/home/data1/Arabidopsis_simulated.plastome/filtered_spades/corrected/filtered_1_unpaired.00.1_0.cor.fastq.gz"
+  "type": "single"
+- "single reads":
+  - "/home/data1/Arabidopsis_simulated.plastome/filtered_spades/corrected/filtered_2_unpaired.00.2_0.cor.fastq.gz"
+  "type": "single"

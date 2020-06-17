@@ -1,0 +1,85 @@
+---
+max read length: 150
+nomerge max read length: 150
+average read length: 150
+average coverage: 11.9882
+libraries:       
+    - type:            paired-end
+      orientation:     fr
+      left reads:      
+        - /home/data1/Arabidopsis_simulated.plastome-user.seed/filtered_spades/corrected/filtered_1_paired.00.0_0.cor.fastq.gz
+      right reads:     
+        - /home/data1/Arabidopsis_simulated.plastome-user.seed/filtered_spades/corrected/filtered_2_paired.00.0_0.cor.fastq.gz
+      single reads:    
+        - /home/data1/Arabidopsis_simulated.plastome-user.seed/filtered_spades/corrected/filtered__unpaired.00.0_0.cor.fastq.gz
+      data:            
+        unmerged read length: 150
+        merged read length: 0
+        insert size mean: 499.35
+        insert size deviation: 9.89013
+        insert size left quantile: 487
+        insert size right quantile: 512
+        insert size median: 499
+        insert size mad: 7
+        insert size distribution: { 463: 1, 465: 3, 466: 1, 467: 5, 468: 3, 
+                                    469: 9, 470: 2, 471: 5, 472: 11, 473: 11, 
+                                    474: 11, 475: 24, 476: 34, 477: 31, 
+                                    478: 46, 479: 51, 480: 77, 481: 77, 
+                                    482: 94, 483: 135, 484: 131, 485: 168, 
+                                    486: 172, 487: 208, 488: 259, 489: 261, 
+                                    490: 264, 491: 290, 492: 402, 493: 372, 
+                                    494: 375, 495: 425, 496: 462, 497: 437, 
+                                    498: 482, 499: 448, 500: 448, 501: 435, 
+                                    502: 451, 503: 446, 504: 375, 505: 397, 
+                                    506: 378, 507: 368, 508: 282, 509: 270, 
+                                    510: 280, 511: 235, 512: 186, 513: 175, 
+                                    514: 158, 515: 131, 516: 107, 517: 105, 
+                                    518: 72, 519: 59, 520: 56, 521: 47, 
+                                    522: 37, 523: 24, 524: 27, 525: 19, 
+                                    526: 12, 527: 6, 528: 2, 529: 3, 530: 5, 
+                                    531: 1, 532: 3, 533: 4, 534: 1 }
+        pi threshold:    0
+        binary converted: true
+        single reads mapped: false
+        library index:   0
+        number of reads: 42972
+        total nucleotides: 6445800
+    - type:            single
+      single reads:    
+        - /home/data1/Arabidopsis_simulated.plastome-user.seed/filtered_spades/corrected/filtered_1_unpaired.00.1_0.cor.fastq.gz
+      data:            
+        unmerged read length: 150
+        merged read length: 0
+        insert size mean: 0
+        insert size deviation: 0
+        insert size left quantile: 0
+        insert size right quantile: 0
+        insert size median: 0
+        insert size mad: 0
+        insert size distribution: {  }
+        pi threshold:    0
+        binary converted: true
+        single reads mapped: true
+        library index:   1
+        number of reads: 611
+        total nucleotides: 91650
+    - type:            single
+      single reads:    
+        - /home/data1/Arabidopsis_simulated.plastome-user.seed/filtered_spades/corrected/filtered_2_unpaired.00.2_0.cor.fastq.gz
+      data:            
+        unmerged read length: 150
+        merged read length: 0
+        insert size mean: 0
+        insert size deviation: 0
+        insert size left quantile: 0
+        insert size right quantile: 0
+        insert size median: 0
+        insert size mad: 0
+        insert size distribution: {  }
+        pi threshold:    0
+        binary converted: true
+        single reads mapped: true
+        library index:   2
+        number of reads: 421
+        total nucleotides: 63150
+...

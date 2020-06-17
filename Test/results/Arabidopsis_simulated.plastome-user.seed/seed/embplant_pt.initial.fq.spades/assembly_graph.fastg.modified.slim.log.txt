@@ -1,0 +1,15 @@
+2020-05-25 07:18:33,088 - INFO: Slimming file 1/1: /home/data1/Arabidopsis_simulated.plastome-user.seed/seed/embplant_pt.initial.fq.spades/assembly_graph.fastg
+2020-05-25 07:18:33,091 - INFO: Parsing input finished.
+2020-05-25 07:18:33,092 - INFO: Preparing fasta file finished.
+2020-05-25 07:18:33,092 - INFO: Executing BLAST to /root/.pyenv/versions/miniconda3-4.3.30/lib/python3.6/site-packages/GetOrganelleLib/LabelDatabase/embplant_pt ...
+2020-05-25 07:18:33,092 - INFO: Executing BLAST ...
+2020-05-25 07:18:33,178 - INFO: Executing BLAST finished.
+2020-05-25 07:18:33,178 - INFO: Executing BLAST to /root/.pyenv/versions/miniconda3-4.3.30/lib/python3.6/site-packages/GetOrganelleLib/LabelDatabase/embplant_pt finished.
+2020-05-25 07:18:33,179 - INFO: Parsing blast result finished.
+2020-05-25 07:18:33,180 - INFO: No enough coverage information found.
+2020-05-25 07:18:33,180 - INFO: Mapping names ...
+2020-05-25 07:18:33,180 - INFO: Mapping names finished.
+2020-05-25 07:18:33,181 - INFO: Generating slimmed file to /home/data1/Arabidopsis_simulated.plastome-user.seed/seed/embplant_pt.initial.fq.spades/assembly_graph.fastg.modified.fastg
+2020-05-25 07:18:33,182 - INFO: Generating notation table to /home/data1/Arabidopsis_simulated.plastome-user.seed/seed/embplant_pt.initial.fq.spades/assembly_graph.fastg.modified.csv
+2020-05-25 07:18:33,182 - INFO: Slimming file 1/1: /home/data1/Arabidopsis_simulated.plastome-user.seed/seed/embplant_pt.initial.fq.spades/assembly_graph.fastg finished!
+

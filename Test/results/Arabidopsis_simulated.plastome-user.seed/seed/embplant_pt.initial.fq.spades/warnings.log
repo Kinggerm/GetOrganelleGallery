@@ -1,0 +1,4 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:01.375     4M / 1G    WARN    General                 (kmer_coverage_model.cpp   : 327)   Valley value was estimated improperly, reset to 2
+======= Warnings saved to /home/data1/Arabidopsis_simulated.plastome-user.seed/seed/embplant_pt.initial.fq.spades/warnings.log

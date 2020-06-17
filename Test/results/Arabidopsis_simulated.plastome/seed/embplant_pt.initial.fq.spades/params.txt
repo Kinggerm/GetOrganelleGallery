@@ -1,0 +1,31 @@
+Command line: /root/.pyenv/versions/miniconda3-4.3.30/bin/spades.py	-t	1	-s	/home/data1/Arabidopsis_simulated.plastome/seed/embplant_pt.initial.fq	-k	45	--only-assembler	-o	/home/data1/Arabidopsis_simulated.plastome/seed/embplant_pt.initial.fq.spades	
+
+System information:
+  SPAdes version: 3.12.0
+  Python version: 3.6.10
+  OS: Linux-4.14.154-boot2docker-x86_64-with-debian-buster-sid
+
+Output dir: /home/data1/Arabidopsis_simulated.plastome/seed/embplant_pt.initial.fq.spades
+Mode: ONLY assembling (without read error correction)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Multi-cell mode (you should set '--sc' flag if input data was obtained with MDA (single-cell) technology or --meta flag if processing metagenomic dataset)
+  Reads:
+    Library number: 1, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/home/data1/Arabidopsis_simulated.plastome/seed/embplant_pt.initial.fq']
+      merged reads: not specified
+Assembly parameters:
+  k: [45]
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /home/data1/Arabidopsis_simulated.plastome/seed/embplant_pt.initial.fq.spades/tmp
+  Threads: 1
+  Memory limit (in Gb): 12
+

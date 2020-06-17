@@ -1,0 +1,12 @@
+- "left reads":
+  - "/home/data1/Arabidopsis_simulated.plastome-user.seed/filtered_1_paired.fq"
+  "orientation": "fr"
+  "right reads":
+  - "/home/data1/Arabidopsis_simulated.plastome-user.seed/filtered_2_paired.fq"
+  "type": "paired-end"
+- "single reads":
+  - "/home/data1/Arabidopsis_simulated.plastome-user.seed/filtered_1_unpaired.fq"
+  "type": "single"
+- "single reads":
+  - "/home/data1/Arabidopsis_simulated.plastome-user.seed/filtered_2_unpaired.fq"
+  "type": "single"

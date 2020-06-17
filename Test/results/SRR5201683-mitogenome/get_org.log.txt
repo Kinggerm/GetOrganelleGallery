@@ -1,0 +1,98 @@
+
+GetOrganelle v1.7.0-beta5
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+PYTHON LIBS: numpy 1.18.1; sympy 1.5.1; scipy 1.4.1; psutil 5.7.0
+DEPENDENCIES: Bowtie2 2.3.5.1; SPAdes 3.12.0; Blast 2.9.0; Bandage 0.8.1
+SEED  DB: animal_mt 0.0.0
+LABEL DB: animal_mt 0.0.0
+WORKING DIR: /home/data1
+/root/.pyenv/versions/miniconda3-4.3.30/bin/get_organelle_from_reads.py -1 SRR5201683_1.fastq.gz -2 SRR5201683_2.fastq.gz -F animal_mt -o SRR5201683-mitogenome -R 10
+
+2020-06-06 05:50:25,836 - INFO: Pre-reading fastq ...
+2020-06-06 05:50:25,836 - INFO: Estimating reads to use ... (to use all reads, set '--reduce-reads-for-coverage inf')
+2020-06-06 05:50:26,634 - INFO: Estimating reads to use finished.
+2020-06-06 05:50:26,635 - INFO: Unzipping reads file: SRR5201683_1.fastq.gz (21139461 bytes)
+2020-06-06 05:50:27,028 - INFO: Unzipping reads file: SRR5201683_2.fastq.gz (22879815 bytes)
+2020-06-06 05:50:27,433 - INFO: Counting read qualities ...
+2020-06-06 05:50:27,518 - INFO: Identified quality encoding format = Illumina 1.8+
+2020-06-06 05:50:27,519 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2020-06-06 05:50:27,572 - INFO: Mean error rate = 0.0253
+2020-06-06 05:50:27,574 - INFO: Counting read lengths ...
+2020-06-06 05:50:28,057 - INFO: Mean = 98.8 bp, maximum = 99 bp.
+2020-06-06 05:50:28,058 - INFO: Reads used = 250000+250000
+2020-06-06 05:50:28,058 - INFO: Pre-reading fastq finished.
+
+2020-06-06 05:50:28,058 - INFO: Making seed reads ...
+2020-06-06 05:50:28,058 - INFO: Seed bowtie2 index existed!
+2020-06-06 05:50:28,058 - INFO: Mapping reads to seed bowtie2 index ...
+2020-06-06 05:50:39,885 - INFO: Mapping finished.
+2020-06-06 05:50:39,885 - INFO: Seed reads made: SRR5201683-mitogenome/seed/animal_mt.initial.fq (2393450 bytes)
+2020-06-06 05:50:39,885 - INFO: Making seed reads finished.
+
+2020-06-06 05:50:39,886 - INFO: Checking seed reads and parameters ...
+2020-06-06 05:50:39,886 - INFO: The automatically-estimated parameter(s) do not ensure the best choice(s).
+2020-06-06 05:50:39,886 - INFO: If the result graph is not a circular organelle genome, 
+2020-06-06 05:50:39,886 - INFO:   you could adjust the value(s) of '-w'/'-R' for another new run.
+2020-06-06 05:50:42,211 - INFO: Pre-assembling mapped reads ...
+2020-06-06 05:50:44,406 - INFO: Pre-assembling mapped reads finished.
+2020-06-06 05:50:44,406 - INFO: Estimated animal_mt-hitting base-coverage = 172.60
+2020-06-06 05:50:44,406 - INFO: Estimated word size(s): 48
+2020-06-06 05:50:44,406 - INFO: Setting '-w 48'
+2020-06-06 05:50:44,407 - INFO: Setting '--max-extending-len inf'
+2020-06-06 05:50:44,481 - INFO: Checking seed reads and parameters finished.
+
+2020-06-06 05:50:44,481 - INFO: Making read index ...
+2020-06-06 05:50:47,942 - INFO: Mem 0.285 G, 435735 candidates in all 500000 reads
+2020-06-06 05:50:47,943 - INFO: Pre-grouping reads ...
+2020-06-06 05:50:47,943 - INFO: Setting '--pre-w 48'
+2020-06-06 05:50:47,972 - INFO: Mem 0.265 G, 11522/11522 used/duplicated
+2020-06-06 05:50:48,392 - INFO: Mem 0.266 G, 18 groups made.
+2020-06-06 05:50:48,425 - INFO: Making read index finished.
+
+2020-06-06 05:50:48,426 - INFO: Extending ...
+2020-06-06 05:50:48,426 - INFO: Adding initial words ...
+2020-06-06 05:50:48,570 - INFO: AW 61646
+2020-06-06 05:50:50,446 - INFO: Round 1: 435735/435735 AI 23645 AW 295782 Mem 0.158
+2020-06-06 05:50:52,138 - INFO: Round 2: 435735/435735 AI 24282 AW 319640 Mem 0.161
+2020-06-06 05:50:54,009 - INFO: Round 3: 435735/435735 AI 24633 AW 332724 Mem 0.162
+2020-06-06 05:50:55,776 - INFO: Round 4: 435735/435735 AI 25081 AW 347414 Mem 0.164
+2020-06-06 05:50:57,793 - INFO: Round 5: 435735/435735 AI 25614 AW 363798 Mem 0.181
+2020-06-06 05:50:59,829 - INFO: Round 6: 435735/435735 AI 26098 AW 378706 Mem 0.183
+2020-06-06 05:51:01,901 - INFO: Round 7: 435735/435735 AI 26397 AW 389078 Mem 0.184
+2020-06-06 05:51:03,939 - INFO: Round 8: 435735/435735 AI 26803 AW 402408 Mem 0.185
+2020-06-06 05:51:05,980 - INFO: Round 9: 435735/435735 AI 27173 AW 414670 Mem 0.186
+2020-06-06 05:51:08,035 - INFO: Round 10: 435735/435735 AI 27773 AW 433016 Mem 0.188
+2020-06-06 05:51:08,035 - INFO: Hit the round limit 10 and terminated ...
+2020-06-06 05:51:08,729 - INFO: Extending finished.
+
+2020-06-06 05:51:08,742 - INFO: Separating filtered fastq file ... 
+2020-06-06 05:51:08,941 - INFO: Setting '-k 21,55,85'
+2020-06-06 05:51:08,941 - INFO: Assembling using SPAdes ...
+2020-06-06 05:51:08,947 - INFO: spades.py -t 1  -1 SRR5201683-mitogenome/filtered_1_paired.fq -2 SRR5201683-mitogenome/filtered_2_paired.fq --s1 SRR5201683-mitogenome/filtered_1_unpaired.fq --s2 SRR5201683-mitogenome/filtered_2_unpaired.fq -k 21,55,85 -o SRR5201683-mitogenome/filtered_spades
+2020-06-06 05:51:31,237 - INFO: Insert size = 246.309, deviation = 82.1998, left quantile = 156, right quantile = 355
+2020-06-06 05:51:31,237 - INFO: Assembling finished.
+
+2020-06-06 05:51:32,470 - INFO: Slimming SRR5201683-mitogenome/filtered_spades/K85/assembly_graph.fastg finished!
+2020-06-06 05:51:33,660 - INFO: Slimming SRR5201683-mitogenome/filtered_spades/K55/assembly_graph.fastg finished!
+2020-06-06 05:51:33,660 - INFO: Slimming assembly graphs finished.
+
+2020-06-06 05:51:33,661 - INFO: Extracting animal_mt from the assemblies ...
+2020-06-06 05:51:33,662 - INFO: Disentangling SRR5201683-mitogenome/filtered_spades/K85/assembly_graph.fastg.extend-animal_mt.fastg as a circular genome ... 
+2020-06-06 05:51:33,668 - INFO: Average animal_mt kmer-coverage = 67.5
+2020-06-06 05:51:33,668 - INFO: Average animal_mt base-coverage = 450.6
+2020-06-06 05:51:33,668 - INFO: Writing output ...
+2020-06-06 05:51:33,676 - INFO: Writing PATH1 of complete animal_mt to SRR5201683-mitogenome/animal_mt.K85.complete.graph1.1.path_sequence.fasta
+2020-06-06 05:51:33,676 - INFO: Writing GRAPH to SRR5201683-mitogenome/animal_mt.K85.complete.graph1.selected_graph.gfa
+2020-06-06 05:51:33,761 - INFO: Writing GRAPH image to SRR5201683-mitogenome/animal_mt.K85.complete.graph1.selected_graph.png
+2020-06-06 05:51:33,762 - INFO: Result status of animal_mt: circular genome
+2020-06-06 05:51:33,777 - INFO: Please check the produced assembly image or manually visualize SRR5201683-mitogenome/filtered_K85.assembly_graph.fastg.extend-animal_mt.fastg using Bandage to confirm the final result.
+2020-06-06 05:51:33,777 - INFO: Writing output finished.
+2020-06-06 05:51:33,778 - INFO: Extracting animal_mt from the assemblies finished.
+
+
+Total cost 68.45 s
+Thank you!

@@ -1,0 +1,20 @@
+2020-06-17 05:37:59,917 - INFO: Slimming file 1/1: SRR5602600-plastome/filtered_spades/K85/assembly_graph.fastg
+2020-06-17 05:37:59,922 - INFO: Parsing input finished.
+2020-06-17 05:37:59,923 - INFO: Preparing fasta file finished.
+2020-06-17 05:37:59,923 - INFO: Executing BLAST to /root/.pyenv/versions/miniconda3-4.3.30/lib/python3.6/site-packages/GetOrganelleLib/LabelDatabase/embplant_pt ...
+2020-06-17 05:37:59,923 - INFO: Executing BLAST ...
+2020-06-17 05:38:00,073 - INFO: Executing BLAST finished.
+2020-06-17 05:38:00,074 - INFO: Executing BLAST to /root/.pyenv/versions/miniconda3-4.3.30/lib/python3.6/site-packages/GetOrganelleLib/LabelDatabase/embplant_pt finished.
+2020-06-17 05:38:00,075 - INFO: Parsing blast result finished.
+2020-06-17 05:38:00,075 - INFO: Executing BLAST to /root/.pyenv/versions/miniconda3-4.3.30/lib/python3.6/site-packages/GetOrganelleLib/LabelDatabase/embplant_mt ...
+2020-06-17 05:38:00,075 - INFO: Executing BLAST ...
+2020-06-17 05:38:00,160 - INFO: Executing BLAST finished.
+2020-06-17 05:38:00,161 - INFO: Executing BLAST to /root/.pyenv/versions/miniconda3-4.3.30/lib/python3.6/site-packages/GetOrganelleLib/LabelDatabase/embplant_mt finished.
+2020-06-17 05:38:00,161 - INFO: Parsing blast result finished.
+2020-06-17 05:38:00,162 - INFO: No enough coverage information found.
+2020-06-17 05:38:00,162 - INFO: Mapping names ...
+2020-06-17 05:38:00,163 - INFO: Mapping names finished.
+2020-06-17 05:38:00,163 - INFO: Generating slimmed file to /home/data1/SRR5602600-plastome/filtered_spades/K85/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg
+2020-06-17 05:38:00,167 - INFO: Generating notation table to /home/data1/SRR5602600-plastome/filtered_spades/K85/assembly_graph.fastg.extend-embplant_pt-embplant_mt.csv
+2020-06-17 05:38:00,168 - INFO: Slimming file 1/1: SRR5602600-plastome/filtered_spades/K85/assembly_graph.fastg finished!
+

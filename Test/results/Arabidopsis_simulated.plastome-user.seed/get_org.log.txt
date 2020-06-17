@@ -1,0 +1,104 @@
+
+GetOrganelle v1.7.0-beta3
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.10 |Anaconda, Inc.| (default, Mar 25 2020, 23:51:54)  [GCC 7.3.0]
+PYTHON LIBS: numpy 1.18.1; sympy 1.5.1; scipy 1.4.1; psutil 5.7.0
+DEPENDENCIES: Bowtie2 2.3.5.1; SPAdes 3.12.0; Blast 2.9.0; Bandage 0.8.1
+WORKING DIR: /home/data1
+/root/.pyenv/versions/miniconda3-4.3.30/bin/get_organelle_from_reads.py -1 Arabidopsis_simulated.1.fq.gz -2 Arabidopsis_simulated.2.fq.gz -t 1 -o Arabidopsis_simulated.plastome-user.seed -F embplant_pt -R 10 -s Phaseolus_vulgaris_plastome.fasta
+
+2020-05-25 07:18:24,365 - INFO: Pre-reading fastq ...
+2020-05-25 07:18:24,365 - INFO: Estimating reads to use ... (to use all reads, set '--reduce-reads-for-coverage inf')
+2020-05-25 07:18:25,126 - INFO: Estimating reads to use finished.
+2020-05-25 07:18:25,126 - INFO: Unzipping reads file: Arabidopsis_simulated.1.fq.gz (8796915 bytes)
+2020-05-25 07:18:25,299 - INFO: Unzipping reads file: Arabidopsis_simulated.2.fq.gz (9067061 bytes)
+2020-05-25 07:18:25,469 - INFO: Counting read qualities ...
+2020-05-25 07:18:25,594 - INFO: Identified quality encoding format = Illumina 1.8+
+2020-05-25 07:18:25,595 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2020-05-25 07:18:25,641 - INFO: Mean error rate = 0.0019
+2020-05-25 07:18:25,642 - INFO: Counting read lengths ...
+2020-05-25 07:18:25,850 - INFO: Mean = 150.0 bp, maximum = 150 bp.
+2020-05-25 07:18:25,851 - INFO: Reads used = 91563+91563
+2020-05-25 07:18:25,851 - INFO: Pre-reading fastq finished.
+
+2020-05-25 07:18:25,851 - INFO: Making seed reads ...
+2020-05-25 07:18:25,858 - INFO: Making seed - bowtie2 index ...
+2020-05-25 07:18:26,087 - INFO: Making seed - bowtie2 index finished.
+2020-05-25 07:18:26,088 - INFO: Mapping reads to seed bowtie2 index ...
+2020-05-25 07:18:29,328 - INFO: Mapping finished.
+2020-05-25 07:18:29,329 - INFO: Seed reads made: Arabidopsis_simulated.plastome-user.seed/seed/embplant_pt.initial.fq (3794476 bytes)
+2020-05-25 07:18:29,329 - INFO: Making seed reads finished.
+
+2020-05-25 07:18:29,331 - INFO: Checking seed reads and parameters ...
+2020-05-25 07:18:29,331 - INFO: The automatically-estimated parameter(s) do not ensure the best choice(s).
+2020-05-25 07:18:29,332 - INFO: If the result graph is not a circular organelle genome, 
+2020-05-25 07:18:29,332 - INFO:   you could adjust the value(s) of '-w'/'-R' for another new run.
+2020-05-25 07:18:30,558 - INFO: Pre-assembling mapped reads ...
+2020-05-25 07:18:33,273 - INFO: Pre-assembling mapped reads finished.
+2020-05-25 07:18:33,273 - INFO: Estimated embplant_pt-hitting base-coverage = 34.26
+2020-05-25 07:18:33,273 - INFO: Estimated word size(s): 79
+2020-05-25 07:18:33,273 - INFO: Setting '-w 79'
+2020-05-25 07:18:33,274 - INFO: Setting '--max-extending-len inf'
+2020-05-25 07:18:33,288 - INFO: Checking seed reads and parameters finished.
+
+2020-05-25 07:18:33,288 - INFO: Making read index ...
+2020-05-25 07:18:34,440 - INFO: Mem 0.181 G, 178623 candidates in all 183126 reads
+2020-05-25 07:18:34,441 - INFO: Pre-grouping reads ...
+2020-05-25 07:18:34,441 - INFO: Setting '--pre-w 79'
+2020-05-25 07:18:34,455 - INFO: Mem 0.171 G, 4074/4074 used/duplicated
+2020-05-25 07:18:34,808 - INFO: Mem 0.192 G, 384 groups made.
+2020-05-25 07:18:34,817 - INFO: Making read index finished.
+
+2020-05-25 07:18:34,817 - INFO: Extending ...
+2020-05-25 07:18:34,817 - INFO: Adding initial words ...
+2020-05-25 07:18:35,213 - INFO: AW 325138
+2020-05-25 07:18:36,979 - INFO: Round 1: 178623/178623 AI 27052 AW 617812 Mem 0.228
+2020-05-25 07:18:38,286 - INFO: Round 2: 178623/178623 AI 34363 AW 727022 Mem 0.257
+2020-05-25 07:18:39,422 - INFO: Round 3: 178623/178623 AI 36904 AW 764534 Mem 0.262
+2020-05-25 07:18:40,548 - INFO: Round 4: 178623/178623 AI 38202 AW 786764 Mem 0.265
+2020-05-25 07:18:41,708 - INFO: Round 5: 178623/178623 AI 38931 AW 798264 Mem 0.266
+2020-05-25 07:18:42,776 - INFO: Round 6: 178623/178623 AI 39209 AW 803430 Mem 0.267
+2020-05-25 07:18:43,881 - INFO: Round 7: 178623/178623 AI 39488 AW 808318 Mem 0.268
+2020-05-25 07:18:44,968 - INFO: Round 8: 178623/178623 AI 39548 AW 808688 Mem 0.268
+2020-05-25 07:18:46,055 - INFO: Round 9: 178623/178623 AI 39548 AW 808688 Mem 0.268
+2020-05-25 07:18:46,056 - INFO: No more reads found and terminated ...
+2020-05-25 07:18:46,433 - INFO: Extending finished.
+
+2020-05-25 07:18:46,439 - INFO: Separating filtered fastq file ... 
+2020-05-25 07:18:46,557 - INFO: Setting '-k 21,55,85,115'
+2020-05-25 07:18:46,558 - INFO: Assembling using SPAdes ...
+2020-05-25 07:18:46,564 - INFO: spades.py -t 1  -1 Arabidopsis_simulated.plastome-user.seed/filtered_1_paired.fq -2 Arabidopsis_simulated.plastome-user.seed/filtered_2_paired.fq --s1 Arabidopsis_simulated.plastome-user.seed/filtered_1_unpaired.fq --s2 Arabidopsis_simulated.plastome-user.seed/filtered_2_unpaired.fq -k 21,55,85,115 -o Arabidopsis_simulated.plastome-user.seed/filtered_spades
+2020-05-25 07:19:10,083 - INFO: Insert size = 499.35, deviation = 9.89013, left quantile = 487, right quantile = 512
+2020-05-25 07:19:10,083 - INFO: Assembling finished.
+
+2020-05-25 07:19:11,193 - INFO: Slimming Arabidopsis_simulated.plastome-user.seed/filtered_spades/K115/assembly_graph.fastg finished!
+2020-05-25 07:19:12,236 - INFO: Slimming Arabidopsis_simulated.plastome-user.seed/filtered_spades/K85/assembly_graph.fastg finished!
+2020-05-25 07:19:13,262 - INFO: Slimming Arabidopsis_simulated.plastome-user.seed/filtered_spades/K55/assembly_graph.fastg finished!
+2020-05-25 07:19:13,263 - INFO: Slimming assembly graphs finished.
+
+2020-05-25 07:19:13,263 - INFO: Extracting embplant_pt from the assemblies ...
+2020-05-25 07:19:13,264 - INFO: Disentangling Arabidopsis_simulated.plastome-user.seed/filtered_spades/K115/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2020-05-25 07:19:13,508 - INFO: Vertex_2910 #copy = 1
+2020-05-25 07:19:13,508 - INFO: Vertex_2936 #copy = 2
+2020-05-25 07:19:13,508 - INFO: Vertex_2938 #copy = 1
+2020-05-25 07:19:13,509 - INFO: Average embplant_pt kmer-coverage = 10.0
+2020-05-25 07:19:13,509 - INFO: Average embplant_pt base-coverage = 41.5
+2020-05-25 07:19:13,509 - INFO: Writing output ...
+2020-05-25 07:19:13,558 - WARNING: More than one circular genome structure produced ...
+2020-05-25 07:19:13,558 - WARNING: Please check the final result to confirm whether they are simply flip-flop configurations!
+2020-05-25 07:19:14,308 - INFO: Detecting large repeats (>1000 bp) in PATH1 with IRs detected, Total:LSC:SSC:Repeat(bp) = 154478:84170:17780:26264
+2020-05-25 07:19:14,308 - INFO: Writing PATH1 of complete embplant_pt to Arabidopsis_simulated.plastome-user.seed/embplant_pt.K115.complete.graph1.1.path_sequence.fasta
+2020-05-25 07:19:14,311 - INFO: Writing PATH2 of complete embplant_pt to Arabidopsis_simulated.plastome-user.seed/embplant_pt.K115.complete.graph1.2.path_sequence.fasta
+2020-05-25 07:19:14,311 - INFO: Writing GRAPH to Arabidopsis_simulated.plastome-user.seed/embplant_pt.K115.complete.graph1.selected_graph.gfa
+2020-05-25 07:19:14,485 - INFO: Writing GRAPH image to Arabidopsis_simulated.plastome-user.seed/embplant_pt.K115.complete.graph1.selected_graph.png
+2020-05-25 07:19:14,485 - INFO: Result status of embplant_pt: circular genome
+2020-05-25 07:19:14,501 - INFO: Please check the produced assembly image or manually visualize Arabidopsis_simulated.plastome-user.seed/filtered_K115.assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg using Bandage to confirm the final result.
+2020-05-25 07:19:14,502 - INFO: Writing output finished.
+2020-05-25 07:19:14,502 - INFO: Extracting embplant_pt from the assemblies finished.
+
+
+Total cost 50.65 s
+Thank you!

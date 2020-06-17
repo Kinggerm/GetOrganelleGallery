@@ -1,0 +1,15 @@
+2020-06-05 05:04:52,863 - INFO: Slimming file 1/1: SRR5803928-mitogenome/filtered_spades/K115/assembly_graph.fastg
+2020-06-05 05:04:52,865 - INFO: Parsing input finished.
+2020-06-05 05:04:52,865 - INFO: Preparing fasta file finished.
+2020-06-05 05:04:52,865 - INFO: Executing BLAST to /root/.pyenv/versions/miniconda3-4.3.30/lib/python3.6/site-packages/GetOrganelleLib/LabelDatabase/fungus_mt ...
+2020-06-05 05:04:52,865 - INFO: Executing BLAST ...
+2020-06-05 05:04:53,012 - INFO: Executing BLAST finished.
+2020-06-05 05:04:53,012 - INFO: Executing BLAST to /root/.pyenv/versions/miniconda3-4.3.30/lib/python3.6/site-packages/GetOrganelleLib/LabelDatabase/fungus_mt finished.
+2020-06-05 05:04:53,013 - INFO: Parsing blast result finished.
+2020-06-05 05:04:53,013 - INFO: No enough coverage information found.
+2020-06-05 05:04:53,013 - INFO: Mapping names ...
+2020-06-05 05:04:53,013 - INFO: Mapping names finished.
+2020-06-05 05:04:53,013 - INFO: Generating slimmed file to /home/data1/SRR5803928-mitogenome/filtered_spades/K115/assembly_graph.fastg.extend-fungus_mt.fastg
+2020-06-05 05:04:53,014 - INFO: Generating notation table to /home/data1/SRR5803928-mitogenome/filtered_spades/K115/assembly_graph.fastg.extend-fungus_mt.csv
+2020-06-05 05:04:53,014 - INFO: Slimming file 1/1: SRR5803928-mitogenome/filtered_spades/K115/assembly_graph.fastg finished!
+

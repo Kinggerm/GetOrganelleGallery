@@ -1,0 +1,98 @@
+---
+max read length: 150
+nomerge max read length: 150
+average read length: 149.997
+average coverage: 67.2694
+libraries:       
+    - type:            paired-end
+      orientation:     fr
+      left reads:      
+        - /home/data1/SRR5803928-mitogenome/filtered_spades/corrected/filtered_1_paired.00.0_0.cor.fastq.gz
+      right reads:     
+        - /home/data1/SRR5803928-mitogenome/filtered_spades/corrected/filtered_2_paired.00.0_0.cor.fastq.gz
+      single reads:    
+        - /home/data1/SRR5803928-mitogenome/filtered_spades/corrected/filtered__unpaired.00.0_0.cor.fastq.gz
+      data:            
+        unmerged read length: 150
+        merged read length: 0
+        insert size mean: 362.691
+        insert size deviation: 14.9387
+        insert size left quantile: 344
+        insert size right quantile: 382
+        insert size median: 362
+        insert size mad: 11
+        insert size distribution: { 282: 2, 283: 1, 284: 2, 286: 3, 287: 1, 
+                                    288: 3, 289: 2, 291: 2, 294: 1, 295: 1, 
+                                    297: 4, 298: 1, 299: 3, 300: 2, 301: 3, 
+                                    302: 4, 303: 1, 304: 2, 305: 4, 306: 1, 
+                                    307: 1, 308: 5, 310: 2, 311: 6, 312: 4, 
+                                    313: 5, 314: 8, 315: 9, 316: 3, 317: 7, 
+                                    318: 10, 319: 6, 320: 11, 321: 12, 
+                                    322: 12, 323: 10, 324: 16, 325: 22, 
+                                    326: 29, 327: 37, 328: 44, 329: 65, 
+                                    330: 49, 331: 85, 332: 88, 333: 124, 
+                                    334: 141, 335: 121, 336: 196, 337: 212, 
+                                    338: 233, 339: 286, 340: 332, 341: 403, 
+                                    342: 468, 343: 448, 344: 532, 345: 568, 
+                                    346: 615, 347: 655, 348: 709, 349: 728, 
+                                    350: 790, 351: 886, 352: 849, 353: 868, 
+                                    354: 903, 355: 943, 356: 944, 357: 967, 
+                                    358: 894, 359: 988, 360: 926, 361: 1023, 
+                                    362: 912, 363: 927, 364: 883, 365: 896, 
+                                    366: 876, 367: 859, 368: 919, 369: 904, 
+                                    370: 875, 371: 732, 372: 752, 373: 784, 
+                                    374: 703, 375: 676, 376: 754, 377: 617, 
+                                    378: 581, 379: 555, 380: 528, 381: 519, 
+                                    382: 533, 383: 404, 384: 407, 385: 385, 
+                                    386: 388, 387: 286, 388: 258, 389: 219, 
+                                    390: 236, 391: 222, 392: 174, 393: 155, 
+                                    394: 123, 395: 89, 396: 75, 397: 71, 
+                                    398: 50, 399: 38, 400: 38, 401: 35, 
+                                    402: 28, 403: 22, 404: 19, 405: 17, 
+                                    406: 12, 407: 4, 408: 2, 409: 1, 410: 8, 
+                                    411: 1, 412: 1, 413: 1, 414: 2, 416: 3 }
+        pi threshold:    0
+        binary converted: true
+        single reads mapped: false
+        library index:   0
+        number of reads: 77338
+        total nucleotides: 11600458
+    - type:            single
+      single reads:    
+        - /home/data1/SRR5803928-mitogenome/filtered_spades/corrected/filtered_1_unpaired.00.1_0.cor.fastq.gz
+      data:            
+        unmerged read length: 150
+        merged read length: 0
+        insert size mean: 0
+        insert size deviation: 0
+        insert size left quantile: 0
+        insert size right quantile: 0
+        insert size median: 0
+        insert size mad: 0
+        insert size distribution: {  }
+        pi threshold:    0
+        binary converted: true
+        single reads mapped: true
+        library index:   1
+        number of reads: 2805
+        total nucleotides: 420728
+    - type:            single
+      single reads:    
+        - /home/data1/SRR5803928-mitogenome/filtered_spades/corrected/filtered_2_unpaired.00.2_0.cor.fastq.gz
+      data:            
+        unmerged read length: 150
+        merged read length: 0
+        insert size mean: 0
+        insert size deviation: 0
+        insert size left quantile: 0
+        insert size right quantile: 0
+        insert size median: 0
+        insert size mad: 0
+        insert size distribution: {  }
+        pi threshold:    0
+        binary converted: true
+        single reads mapped: true
+        library index:   2
+        number of reads: 3159
+        total nucleotides: 473828
+...

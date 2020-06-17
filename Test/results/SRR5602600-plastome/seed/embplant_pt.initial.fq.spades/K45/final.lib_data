@@ -1,0 +1,26 @@
+---
+max read length: 250
+nomerge max read length: 250
+average read length: 247.117
+average coverage: 38.3713
+libraries:       
+    - type:            single
+      single reads:    
+        - /home/data1/SRR5602600-plastome/seed/embplant_pt.initial.fq
+      data:            
+        unmerged read length: 250
+        merged read length: 0
+        insert size mean: 0
+        insert size deviation: 0
+        insert size left quantile: 0
+        insert size right quantile: 0
+        insert size median: 0
+        insert size mad: 0
+        insert size distribution: {  }
+        pi threshold:    0
+        binary converted: true
+        single reads mapped: true
+        library index:   0
+        number of reads: 22395
+        total nucleotides: 5534177
+...

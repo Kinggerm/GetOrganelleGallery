@@ -1,0 +1,48 @@
+Command line: /root/.pyenv/versions/miniconda3-4.3.30/bin/spades.py	-t	1	-1	/home/data1/Arabidopsis_simulated.plastome/filtered_1_paired.fq	-2	/home/data1/Arabidopsis_simulated.plastome/filtered_2_paired.fq	--s1	/home/data1/Arabidopsis_simulated.plastome/filtered_1_unpaired.fq	--s2	/home/data1/Arabidopsis_simulated.plastome/filtered_2_unpaired.fq	-k	21,55,85,115	-o	/home/data1/Arabidopsis_simulated.plastome/filtered_spades	
+
+System information:
+  SPAdes version: 3.12.0
+  Python version: 3.6.10
+  OS: Linux-4.14.154-boot2docker-x86_64-with-debian-buster-sid
+
+Output dir: /home/data1/Arabidopsis_simulated.plastome/filtered_spades
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Multi-cell mode (you should set '--sc' flag if input data was obtained with MDA (single-cell) technology or --meta flag if processing metagenomic dataset)
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/home/data1/Arabidopsis_simulated.plastome/filtered_1_paired.fq']
+      right reads: ['/home/data1/Arabidopsis_simulated.plastome/filtered_2_paired.fq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+    Library number: 2, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/home/data1/Arabidopsis_simulated.plastome/filtered_1_unpaired.fq']
+      merged reads: not specified
+    Library number: 3, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/home/data1/Arabidopsis_simulated.plastome/filtered_2_unpaired.fq']
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: [21, 55, 85, 115]
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /home/data1/Arabidopsis_simulated.plastome/filtered_spades/tmp
+  Threads: 1
+  Memory limit (in Gb): 12
+

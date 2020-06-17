@@ -1,0 +1,4 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:00.708     4M / 1G    WARN    General                 (kmer_coverage_model.cpp   : 218)   Too many erroneous kmers, the estimates might be unreliable
+======= Warnings saved to /home/data1/SRR5201683-mitogenome/seed/animal_mt.initial.fq.spades/warnings.log
