@@ -1,0 +1,155 @@
+
+GetOrganelle v1.7.1-meta
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.10 |Anaconda, Inc.| (default, May  8 2020, 02:54:21)  [GCC 7.3.0]
+PYTHON LIBS: GetOrganelleLib 1.7.1-meta; numpy 1.18.5; sympy 1.6.1; scipy 1.5.0; psutil 5.7.0
+DEPENDENCIES: Bowtie2 2.3.5.1; SPAdes 3.12.0; Blast 2.9.0; Bandage 0.8.1
+SEED  DB: animal_mt 0.0.0
+LABEL DB: animal_mt 0.0.0
+WORKING DIR: /home/meta
+/root/.pyenv/versions/miniconda3-4.3.30/bin/get_organelle_from_reads.py -1 mixture_1.fq.gz -2 mixture_2.fq.gz -F animal_mt -o mixture-meta-mitogenomes -R 15 --meta
+
+2020-07-27 16:33:14,946 - INFO: Pre-reading fastq ...
+2020-07-27 16:33:14,947 - INFO: "--meta" used, setting "--reduce-reads-for-cov inf"
+2020-07-27 16:33:14,947 - INFO: "--meta" used, setting "--max-n-reads inf"
+2020-07-27 16:33:14,947 - INFO: Unzipping reads file: mixture_1.fq.gz (446111986 bytes)
+2020-07-27 16:33:23,095 - INFO: Unzipping reads file: mixture_2.fq.gz (456710333 bytes)
+2020-07-27 16:33:31,789 - INFO: Counting read qualities ...
+2020-07-27 16:33:31,894 - INFO: Identified quality encoding format = Illumina 1.8+
+2020-07-27 16:33:31,895 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2020-07-27 16:33:31,973 - INFO: Mean error rate = 0.0182
+2020-07-27 16:33:31,974 - INFO: Counting read lengths ...
+2020-07-27 16:33:41,267 - INFO: Mean = 100.4 bp, maximum = 101 bp.
+2020-07-27 16:33:41,267 - INFO: Reads used = 5000000+5000000
+2020-07-27 16:33:41,268 - INFO: Pre-reading fastq finished.
+
+2020-07-27 16:33:41,268 - INFO: Making seed reads ...
+2020-07-27 16:33:41,269 - INFO: Seed bowtie2 index existed!
+2020-07-27 16:33:41,269 - INFO: Mapping reads to seed bowtie2 index ...
+2020-07-27 16:36:48,059 - INFO: Mapping finished.
+2020-07-27 16:36:48,060 - INFO: Seed reads made: mixture-meta-mitogenomes/seed/animal_mt.initial.fq (13582654 bytes)
+2020-07-27 16:36:48,062 - INFO: Making seed reads finished.
+
+2020-07-27 16:36:48,063 - INFO: Checking seed reads and parameters ...
+2020-07-27 16:36:48,063 - INFO: The automatically-estimated parameter(s) do not ensure the best choice(s).
+2020-07-27 16:36:48,063 - INFO: If the result graph is not a circular organelle genome, 
+2020-07-27 16:36:48,063 - INFO:   you could adjust the value(s) of '-w'/'-R' for another new run.
+2020-07-27 16:36:51,211 - INFO: Pre-assembling mapped reads ...
+2020-07-27 16:36:57,616 - INFO: Pre-assembling mapped reads finished.
+2020-07-27 16:36:57,616 - INFO: Estimated animal_mt-hitting base-coverage = 187.86
+2020-07-27 16:36:57,758 - INFO: Estimated word size(s): 50
+2020-07-27 16:36:57,758 - INFO: Setting '-w 50'
+2020-07-27 16:36:57,758 - INFO: Setting '--max-extending-len inf'
+2020-07-27 16:36:57,860 - INFO: Checking seed reads and parameters finished.
+
+2020-07-27 16:36:57,860 - INFO: Making read index ...
+2020-07-27 16:38:13,331 - INFO: Mem 3.861 G, 9500598 candidates in all 10000000 reads
+2020-07-27 16:38:13,348 - INFO: Pre-grouping reads ...
+2020-07-27 16:38:13,348 - INFO: Setting '--pre-w 50'
+2020-07-27 16:38:13,986 - INFO: Mem 3.549 G, 120057/120057 used/duplicated
+2020-07-27 16:38:24,186 - INFO: Mem 3.726 G, 2288 groups made.
+2020-07-27 16:38:25,431 - INFO: Making read index finished.
+
+2020-07-27 16:38:25,431 - INFO: Extending ...
+2020-07-27 16:38:25,431 - INFO: Adding initial words ...
+2020-07-27 16:38:26,320 - INFO: AW 401168
+2020-07-27 16:39:34,552 - INFO: Round 1: 9500598/9500598 AI 376432 AW 9010869 Mem 1.534
+2020-07-27 16:40:54,070 - INFO: Round 2: 9500598/9500598 AI 904775 AW 21474883 Mem 3.082
+2020-07-27 16:42:04,397 - INFO: Round 3: 9500598/9500598 AI 1010150 AW 24837472 Mem 3.923
+2020-07-27 16:43:09,088 - INFO: Round 4: 9500598/9500598 AI 1045349 AW 25928890 Mem 4.034
+2020-07-27 16:44:16,502 - INFO: Round 5: 9500598/9500598 AI 1065402 AW 26523550 Mem 4.094
+2020-07-27 16:45:24,471 - INFO: Round 6: 9500598/9500598 AI 1077414 AW 26858782 Mem 4.128
+2020-07-27 16:46:25,931 - INFO: Round 7: 9500598/9500598 AI 1089151 AW 27145785 Mem 4.157
+2020-07-27 16:47:31,004 - INFO: Round 8: 9500598/9500598 AI 1095041 AW 27303555 Mem 4.173
+2020-07-27 16:48:36,898 - INFO: Round 9: 9500598/9500598 AI 1098730 AW 27399107 Mem 4.183
+2020-07-27 16:49:44,797 - INFO: Round 10: 9500598/9500598 AI 1101242 AW 27456817 Mem 4.189
+2020-07-27 16:50:50,391 - INFO: Round 11: 9500598/9500598 AI 1103150 AW 27501015 Mem 4.193
+2020-07-27 16:51:56,932 - INFO: Round 12: 9500598/9500598 AI 1104448 AW 27531595 Mem 4.196
+2020-07-27 16:53:04,880 - INFO: Round 13: 9500598/9500598 AI 1105300 AW 27551987 Mem 4.198
+2020-07-27 16:54:13,328 - INFO: Round 14: 9500598/9500598 AI 1105896 AW 27565949 Mem 4.2
+2020-07-27 16:55:24,871 - INFO: Round 15: 9500598/9500598 AI 1106330 AW 27577533 Mem 4.201
+2020-07-27 16:55:24,871 - INFO: Hit the round limit 15 and terminated ...
+2020-07-27 16:55:49,225 - INFO: Extending finished.
+
+2020-07-27 16:55:49,538 - INFO: Separating filtered fastq file ... 
+2020-07-27 16:55:54,155 - INFO: Setting '-k 21,55,85'
+2020-07-27 16:55:54,156 - INFO: Assembling using SPAdes ...
+2020-07-27 16:55:54,170 - INFO: spades.py -t 1  --meta -1 mixture-meta-mitogenomes/filtered_1_paired.fq -2 mixture-meta-mitogenomes/filtered_2_paired.fq -k 21,55,85 -o mixture-meta-mitogenomes/filtered_spades
+2020-07-27 17:16:39,484 - INFO: Insert size = 270.965, deviation = 103.826, left quantile = 162, right quantile = 378
+2020-07-27 17:16:39,484 - INFO: Insert size = 277.155, deviation = 108.757, left quantile = 162, right quantile = 378
+2020-07-27 17:16:39,484 - INFO: Assembling finished.
+
+2020-07-27 17:16:45,861 - INFO: Slimming mixture-meta-mitogenomes/filtered_spades/K85/assembly_graph.fastg finished!
+2020-07-27 17:16:59,534 - INFO: Slimming mixture-meta-mitogenomes/filtered_spades/K55/assembly_graph.fastg finished!
+2020-07-27 17:16:59,534 - INFO: Slimming assembly graphs finished.
+
+2020-07-27 17:16:59,534 - INFO: Extracting animal_mt from the assemblies ...
+2020-07-27 17:16:59,534 - INFO: Disentangling mixture-meta-mitogenomes/filtered_spades/K85/assembly_graph.fastg.extend-animal_mt.fastg as a circular genome ... 
+2020-07-27 17:16:59,551 - INFO: Average animal_mt kmer-coverage = 268.7
+2020-07-27 17:16:59,551 - INFO: Average animal_mt base-coverage = 1648.6
+2020-07-27 17:16:59,565 - INFO: Average animal_mt kmer-coverage = 42.2
+2020-07-27 17:16:59,565 - INFO: Average animal_mt base-coverage = 259.1
+2020-07-27 17:16:59,572 - INFO: Average animal_mt kmer-coverage = 14.5
+2020-07-27 17:16:59,573 - INFO: Average animal_mt base-coverage = 89.2
+2020-07-27 17:16:59,584 - INFO: Average animal_mt kmer-coverage = 9.6
+2020-07-27 17:16:59,584 - INFO: Average animal_mt base-coverage = 59.2
+2020-07-27 17:16:59,599 - INFO: Average animal_mt kmer-coverage = 6.9
+2020-07-27 17:16:59,599 - INFO: Average animal_mt base-coverage = 42.5
+2020-07-27 17:16:59,849 - INFO: Average animal_mt kmer-coverage = 6.2
+2020-07-27 17:16:59,849 - INFO: Average animal_mt base-coverage = 37.9
+2020-07-27 17:17:00,461 - INFO: Average animal_mt kmer-coverage = 2.9
+2020-07-27 17:17:00,461 - INFO: Average animal_mt base-coverage = 18.0
+2020-07-27 17:17:00,565 - INFO: Average animal_mt kmer-coverage = 2.5
+2020-07-27 17:17:00,565 - INFO: Average animal_mt base-coverage = 15.2
+2020-07-27 17:17:00,720 - INFO: Average animal_mt kmer-coverage = 0.3
+2020-07-27 17:17:00,720 - INFO: Average animal_mt base-coverage = 2.1
+2020-07-27 17:17:00,729 - INFO: Average animal_mt kmer-coverage = 1.0
+2020-07-27 17:17:00,729 - INFO: Average animal_mt base-coverage = 5.9
+2020-07-27 17:17:00,734 - INFO: Average animal_mt kmer-coverage = 0.3
+2020-07-27 17:17:00,734 - INFO: Average animal_mt base-coverage = 2.1
+2020-07-27 17:17:00,734 - WARNING: 11 sets of graph detected!
+2020-07-27 17:17:00,735 - INFO: Writing output ...
+2020-07-27 17:17:00,741 - INFO: Writing PATH1 of complete animal_mt to mixture-meta-mitogenomes/animal_mt.K85.complete.graph1.1.path_sequence.fasta
+2020-07-27 17:17:00,741 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.complete.graph1.selected_graph.gfa
+2020-07-27 17:17:00,887 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.complete.graph1.selected_graph.png
+2020-07-27 17:17:00,894 - INFO: Writing PATH1 of complete animal_mt to mixture-meta-mitogenomes/animal_mt.K85.complete.graph2.1.path_sequence.fasta
+2020-07-27 17:17:00,894 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.complete.graph2.selected_graph.gfa
+2020-07-27 17:17:00,994 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.complete.graph2.selected_graph.png
+2020-07-27 17:17:01,010 - INFO: Writing PATH1 of complete animal_mt to mixture-meta-mitogenomes/animal_mt.K85.complete.graph3.1.path_sequence.fasta
+2020-07-27 17:17:01,011 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.complete.graph3.selected_graph.gfa
+2020-07-27 17:17:01,121 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.complete.graph3.selected_graph.png
+2020-07-27 17:17:01,128 - INFO: Writing PATH1 of complete animal_mt to mixture-meta-mitogenomes/animal_mt.K85.complete.graph4.1.path_sequence.fasta
+2020-07-27 17:17:01,129 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.complete.graph4.selected_graph.gfa
+2020-07-27 17:17:01,221 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.complete.graph4.selected_graph.png
+2020-07-27 17:17:01,228 - INFO: Writing PATH1 of animal_mt scaffold(s) to mixture-meta-mitogenomes/animal_mt.K85.scaffolds.graph5.1.path_sequence.fasta
+2020-07-27 17:17:01,228 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph5.selected_graph.gfa
+2020-07-27 17:17:01,525 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph5.selected_graph.png
+2020-07-27 17:17:01,528 - INFO: Writing PATH1 of animal_mt scaffold(s) to mixture-meta-mitogenomes/animal_mt.K85.scaffolds.graph6.1.path_sequence.fasta
+2020-07-27 17:17:01,529 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph6.selected_graph.gfa
+2020-07-27 17:17:01,752 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph6.selected_graph.png
+2020-07-27 17:17:01,754 - INFO: Writing PATH1 of animal_mt scaffold(s) to mixture-meta-mitogenomes/animal_mt.K85.scaffolds.graph7.1.path_sequence.fasta
+2020-07-27 17:17:01,755 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph7.selected_graph.gfa
+2020-07-27 17:17:01,980 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph7.selected_graph.png
+2020-07-27 17:17:01,983 - INFO: Writing PATH1 of animal_mt scaffold(s) to mixture-meta-mitogenomes/animal_mt.K85.scaffolds.graph8.1.path_sequence.fasta
+2020-07-27 17:17:01,984 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph8.selected_graph.gfa
+2020-07-27 17:17:02,146 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph8.selected_graph.png
+2020-07-27 17:17:02,147 - INFO: Writing PATH1 of animal_mt scaffold(s) to mixture-meta-mitogenomes/animal_mt.K85.scaffolds.graph9.1.path_sequence.fasta
+2020-07-27 17:17:02,147 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph9.selected_graph.gfa
+2020-07-27 17:17:02,372 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph9.selected_graph.png
+2020-07-27 17:17:02,372 - INFO: Writing PATH1 of animal_mt scaffold(s) to mixture-meta-mitogenomes/animal_mt.K85.scaffolds.graph10.1.path_sequence.fasta
+2020-07-27 17:17:02,373 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph10.selected_graph.gfa
+2020-07-27 17:17:02,594 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph10.selected_graph.png
+2020-07-27 17:17:02,595 - INFO: Writing PATH1 of animal_mt scaffold(s) to mixture-meta-mitogenomes/animal_mt.K85.scaffolds.graph11.1.path_sequence.fasta
+2020-07-27 17:17:02,596 - INFO: Writing GRAPH to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph11.selected_graph.gfa
+2020-07-27 17:17:02,866 - INFO: Writing GRAPH image to mixture-meta-mitogenomes/animal_mt.K85.contigs.graph11.selected_graph.png
+2020-07-27 17:17:02,867 - INFO: Result status of animal_mt: 1,2,3 scaffold(s)
+2020-07-27 17:17:02,900 - INFO: Please check the produced assembly image or manually visualize mixture-meta-mitogenomes/filtered_K85.assembly_graph.fastg.extend-animal_mt.fastg using Bandage to confirm the final result.
+2020-07-27 17:17:02,901 - INFO: Writing output finished.
+2020-07-27 17:17:02,901 - INFO: Extracting animal_mt from the assemblies finished.
+
+
+Total cost 2629.07 s
+Thank you!
